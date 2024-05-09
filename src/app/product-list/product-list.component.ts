@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { products } from '../products';
 import { ProductAlertsComponent } from '../product-alerts/product-alerts.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [CommonModule, ProductAlertsComponent],
+  imports: [CommonModule, RouterModule, ProductAlertsComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
